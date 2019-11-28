@@ -6,6 +6,7 @@
     "ng": "ng",
     "start": "ng serve",
     "serveProd": "ng serve --environment=prod",
+    "serveAll": "ng serve --host 0.0.0.0",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
