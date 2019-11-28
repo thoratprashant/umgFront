@@ -1,0 +1,56 @@
+<div fxLayout="row wrap" class="sign-in-wrapper">
+  <div class="seciton-left"></div>
+  <div class="form-holder">
+
+    <header class="auth--header">
+      <figure class="cursor--pointer">
+        <img src="assets/images/arkenea/logo.png" [routerLink]="['/landing']" alt="" class="app-logo logo--lg">
+         <img src="assets/images/arkenea/logoxs.png" [routerLink]="['/landing']" alt="small logo" class="logo--xs">
+      </figure>
+      <p>Not registered yet? <a [routerLink]="['/sessions/signup']">Sign Up</a></p>
+    </header>
+
+    <div class="social--header">
+      <h3>Login</h3>
+      <div class="social--btns">
+        <button mat-stroked-button color="primary" class="fb">
+          <i class="fb-blue"></i>
+          <span>Facebook</span>
+        </button>
+        <button mat-stroked-button color="primary" class="google">
+          <i class="google-red"></i>
+          <span>Google</span>
+        </button>
+        <button mat-stroked-button color="primary" class="linkedin">
+          <i class="linked-in-blue"></i>
+          <span>LinkedIn</span>
+        </button>
+      </div>
+      <div class="or">
+        <span>OR</span>
+      </div>
+    </div>
+
+
+    <form>
+      <div fxLayout="row wrap" class="text-center-xs">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>Enter Email</mat-label>
+            <input matInput placeholder="Enter Email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full--width no--pad--bot">
+            <mat-label>Enter Password</mat-label>
+            <input matInput placeholder="Enter Password">
+          </mat-form-field>
+
+          <a class="forgot--pass" [routerLink]="['/sessions/forgot-password']" >Forgot Password?</a>
+          <button mat-raised-button color="primary" class="proceed--btn">Proceed</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+

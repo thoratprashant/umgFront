@@ -1,0 +1,300 @@
+.sign-in-wrapper{
+    
+    .seciton-left{
+        background: url(../../../../assets/images/arkenea/signLeft.jpg) 0 0/cover;
+        color: #fff;
+        position: fixed;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        min-width: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-position: center;
+    }
+    .form-holder{
+        background: #fff;
+        padding: 35px;
+        position: fixed;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        min-width: 40%;
+        height: 100vh;
+        touch-action: auto;
+        overflow: auto;
+
+        footer{
+            &.auth--header{
+                align-items: center;
+            }
+        }
+        .auth--header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            p{
+                font-size: 14px;
+                color: #333333;
+                a{
+                    color: #2eb2ff;
+                }
+            }
+        }
+        .social--header{
+            h3{
+                margin: 0 0 25px 0;
+                color: #333;
+                font-size: 20px;
+                font-weight: bold;
+            }
+            .social--btns{
+                display: flex;
+                flex-wrap: wrap;
+                .mat-primary{
+                    display: flex;
+                    width: 140px;
+                    align-items: center;
+                    justify-content: center;
+                    height: 36px;
+                    font-size: 14px;
+                    border-radius: 20px;
+                    margin-right: 15px;
+                    font-weight: normal;
+                    &:last-child{
+                        margin-right:0; 
+                    }
+
+                    ::ng-deep{
+                        .mat-button-wrapper{
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    &.fb{
+                        color: #475993;
+                        border-color: #475993 !important;
+                    }
+                    &.google{
+                        color: #df493a;
+                        border-color: #df493a !important;
+                    }
+                    &.linkedin{
+                        border-color: #0076b3 ;
+                        color: #0076b3 !important;
+                    }
+                }
+                .fb-blue{
+                    width: 9px;
+                    height: 16px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    background-image: url('assets/images/arkenea/facebook-blue.png')
+                }
+                .google-red{
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    background-image: url('assets/images/arkenea/google-red.png')
+                }
+                .linked-in-blue{
+                    width: 16px;
+                    height: 16px;
+                    display: inline-block;
+                    margin-right: 10px;
+                    background-image: url('assets/images/arkenea/linked-in-blue.png')
+                }
+            }
+            .or{
+                display: flex;
+                border: 1px solid #ddd;
+                position: relative;
+                margin: 35px 0;
+                span{
+                    width: 24px;
+                    height: 24px;
+                    background-color: #ddd;
+                    border-radius: 50%;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: #333;
+                    position: absolute;
+                    right: 50%;
+                    top: -12px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;                    
+                }
+            }
+        }
+        .forgot--pass{
+            color: #2eb2ff;
+            font-size: 14px;
+            margin-top: 15px;
+            display: flex;
+        }
+        .proceed--btn{
+            margin-top: 25px;
+        }
+        .char--limit{
+            font-size: 13px;
+            color: #999;
+            margin-bottom: 25px;
+            margin-top: 5px;
+            display: flex;
+        }
+        .terms--policy{
+            font-size: 14px;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 25px;
+            margin-bottom: 25px;
+            a{
+                color: #2eb2ff
+            }
+        }
+    }  
+  
+   
+}
+
+
+
+form{
+    ::ng-deep{
+        .full--width{
+            width: 100%;
+            &.no--pad--bot{
+                .mat-form-field-wrapper{
+                    padding-bottom: 0; 
+                }
+            }
+            
+        }
+      
+        .mat-form-field-appearance-outline{            
+            .mat-form-field-wrapper{
+                padding-bottom: 25px;
+                margin: 0;
+            }
+            .mat-form-field-outline-thick {
+                color: #2eb2ff;
+            }            
+        }  
+        .mat-form-field.mat-focused .mat-form-field-label{
+            color: #2eb2ff !important; 
+        }  
+        .mat-form-field.mat-focused .mat-form-field-outline-thick {
+            color: #2eb2ff;
+        }
+      
+    }
+}
+.cursor--pointer{
+    cursor: pointer;
+}
+.logo--lg{
+    display: block;
+}
+.logo--xs{
+    display: none;
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------------------
+    Media query (start here)
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 599px) {
+    .logo--lg{
+        display: none;
+    }
+   .logo--xs{
+        display: block;
+    }
+    .sign-in-wrapper .form-holder{
+        padding: 20px;
+        width: 100%;
+    }  
+  
+    .sign-in-wrapper .form-holder .social--header h3 {
+        margin: 0 0 15px 0;
+        font-size: 16px;
+    }
+    .sign-in-wrapper .form-holder .social--header .social--btns .mat-primary{
+        margin: 0 10px 7px 0;
+        width: 37px;
+        padding: 0;
+        min-width: 30px;
+    }
+    .sign-in-wrapper .form-holder .social--header .social--btns .fb-blue,
+    .sign-in-wrapper .form-holder .social--header .social--btns .google-red,
+    .sign-in-wrapper .form-holder .social--header .social--btns .linked-in-blue{
+        margin-right: 0;
+    }
+    .sign-in-wrapper .form-holder .social--header .social--btns .mat-primary span{
+       display: none;
+    }
+    .sign-in-wrapper .form-holder .social--header .social--btns{
+        justify-content: center;
+    }
+    .sign-in-wrapper .form-holder .social--header h3{
+        text-align: center;
+    }
+    .sign-in-wrapper .form-holder .social--header .or span{
+        right: 46%;
+    }
+    .sign-in-wrapper .form-holder .auth--header {
+        justify-content: center;
+        margin-bottom: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sign-in-wrapper .form-holder .auth--header p {
+        font-size: 12px;
+        margin: 15px 0 10px 0;
+        text-align: center;
+    }
+    .text-center-xs{
+        text-align: center;
+    }
+    .sign-in-wrapper .form-holder .terms--policy{
+        font-size: 13px;
+    }
+    
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .sign-in-wrapper .seciton-left{
+        min-width: 32%;
+    }
+    .sign-in-wrapper .form-holder{
+        width: 68%;
+    }
+   .logo--lg{
+        display: none;
+    }
+   .logo--xs{
+        display: block;
+    }
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .sign-in-wrapper .seciton-left{
+        min-width: 50%;
+    }
+   .logo--lg{
+        display: none;
+    }
+   .logo--xs{
+        display: block;
+    }
+    .sign-in-wrapper .seciton-left{
+        min-width: 45%;
+    }
+    .sign-in-wrapper .form-holder{
+        width: 55%;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}

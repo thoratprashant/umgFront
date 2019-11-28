@@ -1,0 +1,136 @@
+@mixin primary-btn-style{
+    font-size: 14px  ;
+    border-radius: 2px;
+    padding: 0 30px  ;
+    height: 36px; 
+    border-radius: 22px;
+}
+
+body .mat-stroked-button {
+    border-color: #2eb2ff !important;
+}
+body .mat-raised-button{
+    @include primary-btn-style;
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------- 
+Checkbox & Radion (Start here) 
+-------------------------------------------------------------------------------------------------------------------*/
+
+::ng-deep {
+    .mat-checkbox{
+      .mat-checkbox-inner-container{
+          margin-right: 15px;
+      }
+      .mat-checkbox-frame{
+          border-color: #2eb2ff !important;
+      }
+      .mat-checkbox-label{
+          color: #333;
+          font-size: 16px;
+      }
+      .mat-checkbox-ripple{
+          .mat-ripple-element{
+              background-color: #2eb2ff !important;
+          }   
+      }
+      &.mat-checkbox-checked{
+          .mat-checkbox-background{
+              background-color: #2eb2ff !important;
+          }
+      }
+    }
+    .mat-primary .mat-pseudo-checkbox-checked, 
+    .mat-primary .mat-pseudo-checkbox-indeterminate {
+      background: #2eb2ff !important;
+    }    
+  }
+  .radio--label{
+    font-size: 14px;
+    display: inline-flex;
+    color: #333;
+    margin-right: 20px;
+  }
+  .inline--radio{
+      display: flex;
+      align-items: center;
+      margin-bottom: 25px;
+  }
+  
+  .mat-primary .mat-option.mat-selected:not(.mat-option-disabled) {
+    color: #2eb2ff !important;
+  }
+    
+  // Radio
+  
+  .mat-radio-group{
+  
+    .mat-radio-label{
+        .mat-radio-label-content{
+            color: #333;
+            font-size: 14px;
+        }
+        .mat-radio-outer-circle{
+            border-color: #757575;
+        }      
+        
+    }
+    .mat-radio-checked{
+        .mat-radio-inner-circle{
+            background-color:#2eb2ff !important;      
+        }
+        .mat-radio-outer-circle{    
+            border-color:#2eb2ff !important; 
+        }
+    }
+    .mat-radio-ripple{
+        .mat-ripple-element{
+            background-color:#2eb2ff !important;             
+        }
+    }
+   
+  }
+  
+/*-------------------------------------------------------------------------------------------------------------------- 
+  Checkbox & Radion  (End here) 
+-------------------------------------------------------------------------------------------------------------------*/
+
+/*-------------------------------------------------------------------------------------------------------------------- 
+Calender styling  (Start here) 
+-------------------------------------------------------------------------------------------------------------------*/
+.mat-calendar-body-selected {
+    background-color: #2eb2ff ;
+  }
+.mat-datepicker-toggle-active {
+    color: #2eb2ff;
+}
+  
+.mat-calendar-table-header th,
+.mat-calendar-body-cell-content{
+    font-size: 15px;
+}
+.mat-calendar-header{
+    padding: 0px 8px 0 8px;
+}
+.mat-calendar-controls{
+    margin-top: 0 !important;
+}
+.mat-calendar-controls .mat-button-wrapper{
+    font-size: 15px;    
+}
+.mat-datepicker-content .mat-calendar-next-button, 
+.mat-datepicker-content .mat-calendar-previous-button, 
+.mat-datepicker-toggle {
+    color: #2eb2ff;
+}
+.mat-calendar-body-label{
+    font-size: 15px;
+    font-weight: bold;
+    color: #2eb2ff;
+    font-weight: normal;
+}
+
+  /*-------------------------------------------------------------------------------------------------------------------- 
+  Calender styling  (End here) 
+  -------------------------------------------------------------------------------------------------------------------*/

@@ -1,0 +1,131 @@
+<div fxLayout="row wrap" class="sign-in-wrapper">
+  <div class="seciton-left"></div>
+  <div class="form-holder">
+
+    <header class="auth--header">
+      <figure class="cursor--pointer">
+        <img src="assets/images/arkenea/logo.png" [routerLink]="['/landing']" alt="" class="app-logo logo--lg">
+        <img src="assets/images/arkenea/logoxs.png" [routerLink]="['/landing']" alt="small logo" class="logo--xs">
+      </figure>
+      <p>Are you a doctor or other healthcare professional? <a>Sign Up</a></p>
+    </header>
+
+    <div class="social--header">
+      <h3>Login</h3>
+      <div class="social--btns">
+        <button mat-stroked-button color="primary" class="fb">
+          <i class="fb-blue"></i>
+          <span>Facebook</span>
+        </button>
+        <button mat-stroked-button color="primary" class="google">
+          <i class="google-red"></i>
+          <span>Google</span>
+        </button>
+        <button mat-stroked-button color="primary" class="linkedin">
+          <i class="linked-in-blue"></i>
+          <span>LinkedIn</span>
+        </button>
+      </div>
+      <div class="or">
+        <span>OR</span>
+      </div>
+    </div>
+
+
+    <form>
+
+      <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.sm="0" fxLayoutGap.xs="0">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="49" fxFlex.lg="49" fxFlex.xl="49">
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name">
+          </mat-form-field>
+        </div>
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="49" fxFlex.lg="49" fxFlex.xl="49">
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name">
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div fxLayout="row wrap">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>Enter Email</mat-label>
+            <input matInput placeholder="Enter Email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full--width no--pad--bot">
+            <mat-label>Enter Password</mat-label>
+            <input matInput placeholder="Enter Password">
+          </mat-form-field>
+          <div class="char--limit">Minimum 8 characters, atleast one special character</div>
+
+          <mat-form-field appearance="outline" class="full--width">
+            <input matInput [matDatepicker]="picker" (focus)="picker.open()" placeholder="Date of Birth">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+
+          <mat-radio-group class="inline--radio" aria-label="Select an option">
+            <div class="radio--label">Gender</div>
+            <mat-radio-button class="mr-1" value="1">Male </mat-radio-button>
+            <mat-radio-button value="2">Female </mat-radio-button>
+          </mat-radio-group>
+
+
+
+          <div fxLayout="row wrap" fxLayoutGap="2%">
+            <div fxFlex.xs="25" fxFlex.sm="10" fxFlex.md="10" fxFlex.lg="10" fxFlex.xl="10">
+              <mat-form-field class="full--width" appearance="outline">
+                <mat-label>+1</mat-label>
+                <mat-select>
+                  <mat-option> 01</mat-option>
+                  <mat-option> 02</mat-option>
+                  <mat-option> 03</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div fxFlex.xs="73" fxFlex.sm="88" fxFlex.md="88" fxFlex.lg="88" fxFlex.xl="88">
+              <mat-form-field appearance="outline" class="full--width">
+                <mat-label>Primary phone number</mat-label>
+                <input matInput placeholder="Primary phone number">
+              </mat-form-field>
+            </div>
+          </div>
+
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>City, State/Country </mat-label>
+            <input matInput placeholder="City, State/Country ">
+          </mat-form-field>
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>Zip </mat-label>
+            <input matInput placeholder="Zip ">
+          </mat-form-field>
+          <mat-form-field class="full--width" appearance="outline">
+            <mat-label>First preferred language</mat-label>
+            <mat-select>
+              <mat-option> Eng</mat-option>
+              <mat-option> Mar</mat-option>
+              <mat-option> Hindi</mat-option>
+            </mat-select>
+          </mat-form-field>
+
+
+
+
+          <div class="terms--policy">By clicking proceed, you're agreeing to our <a> Terms of Use </a> and <a> Privacy
+              Policy </a></div>
+
+          <footer class="auth--header mb-0">
+            <button mat-raised-button color="primary" class="mt-0">Proceed</button>
+            <p class="mb-0">Already have an account? <a [routerLink]="['/sessions/signin']">Login</a></p>
+          </footer>
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

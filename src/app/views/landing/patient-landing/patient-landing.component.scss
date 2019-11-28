@@ -1,0 +1,529 @@
+.patient--landing--wrapper{
+    background-color: #fff;
+    .heading--two,
+    .heading{
+        font-size: 48px;
+        color: #333333;
+        margin: 0 0 35px 0;
+        font-weight: bold;
+    }
+    .heading--two{
+        font-size: 42px;
+        font-weight: 500;
+    }
+    .sub--heading{
+        font-size: 18px;
+        color: #666666;       
+    }
+    .grey--bg{
+        background-color: #f5f5f5;
+        padding-bottom: 100px;
+    }
+    .mb--100{
+        margin-bottom: 100px;
+    }
+    .pt--100{
+        padding-top: 100px;
+    }
+    .text--uppercase{
+        text-transform: uppercase;
+    }
+
+
+    .section--one{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 82vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p{
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 28px;
+            a{
+                color: #2eb2ff;
+            }
+        }
+        .icon--connect{
+            width: 53px;
+            height: 37px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url('assets/images/arkenea/connect-now.png')
+        }
+        .icon--our--pricing{
+            width: 25px;
+            height: 24px;
+            display: inline-block;
+            margin-right: 10px;
+            background-image: url('assets/images/arkenea/see-pricing.png')
+        }
+        .connect--now--btn{
+            margin-right: 20px;
+        }
+    }
+
+    .section--two{
+        .history{
+            background-color: #ff5c5c;
+            border-radius: 4px;
+            padding: 26px 0;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-evenly;
+            margin-top: -65px;
+            z-index: 999;
+            position: relative;
+        
+            .box{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                color: #ffffff;
+                h4{
+                    margin: 0 0 7px 0;
+                    font-size: 28px;
+                    font-weight: bold;
+                }
+                p{
+                    font-size: 14px;                    
+                    margin: 0;
+                    text-transform: uppercase;
+                }
+            }
+            .lines{
+                border: 1px solid #993737;
+                height: 55px;
+            }
+        }
+    }
+
+    .section--three{
+        .about--content{
+            margin-left: 35px;
+            p{     
+                margin-bottom: 25px;           
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .section--four{
+        .sub--heading{
+            margin-bottom: 45px;
+        }
+        .works--box{
+            display: flex;
+            justify-content: space-between;
+            
+            .work--steps{
+                display: flex;
+                background-color: #f5f5f5;
+                ::ng-deep{
+                    .mat-card{
+                        box-shadow: none !important;
+                        margin: 0;
+                        background-color: #f5f5f5;
+                        border-radius: 4px;
+                        padding: 45px 30px 40px 25px;
+                        .mat-card-header{
+                            justify-content: center;                           
+                            .mat-card-header-text{
+                                display: none;
+                            }
+                        }
+                    }
+                    .mat-card-content{
+                        h5{
+                            text-transform: uppercase;
+                            font-size: 22px;
+                            margin: 60px 0 25px 0;
+                            font-weight: bold;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                            color: #666;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+
+    .section--five{      
+        .sub--heading{
+            width: 80%;
+            margin: 0 auto 45px auto;
+        }
+        .specialist--wrapper{
+            justify-content: space-between;
+            ::ng-deep{
+                .specialist--card{
+                    &.mat-card{
+                        margin: 0 0 30px  0;
+                        background-color: #fff;
+                        border-radius: 6px;
+                        padding:0;
+                        box-shadow: 0 0 10px 0 rgba(27, 28, 31, 0.08);
+                     
+                    }
+                    .mat-card-content{
+                        margin: 0;
+                        height: 130px;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        h4{
+                            font-size: 20px;
+                            margin: 15px 0 0 0;
+                            font-weight: 500;
+                        }
+                        p{
+                            margin: 0;
+                            font-size: 16px;
+                            color: #666;
+                        }
+                    }
+                    .mat-card-actions{
+                        margin: 0;
+                        height: 45px;
+                        padding: 0 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                        border-top: 1px solid #ededed;
+                        p{
+                            font-size: 16px;
+                            color: #999;
+                            span{
+                                font-weight: bold;
+                                color: #666;
+                            }
+                        }
+                       
+                    }
+                }
+            }
+        }
+       
+    }
+
+    .section--six{
+        .sub--heading{
+            margin-bottom: 45px;
+        }
+    }
+
+    .main--footer{
+        background-color: #2eb2ff;
+        padding: 50px 0 35px 0;
+        color: #fff;
+
+        h6{
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 0 25px;
+        }
+
+        .links{
+            list-style-type: none;
+            li{
+                margin-bottom: 10px;
+                a{
+                    color: #fff;
+                    font-size: 16px;
+                }
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        } 
+        .social{
+            list-style-type: none;
+            li{
+                a{ 
+                    width: 35px;
+                    height: 35px;
+                    background-color: #ffffff; 
+                    margin-right: 15px;
+                    float: left;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+            }
+        }  
+    }
+
+    .copyright--footer{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 17px 0;
+        background-color: #fff;
+        p{
+            font-size: 16px;
+            color: #333;
+            margin-left: 20px;
+        }
+    }
+
+    .mat-primary{
+        font-size: 16px !important;
+        height: 45px;
+        border-radius: 2px;
+        padding: 0 22px;
+        font-weight: 500 !important;
+    }
+  
+}
+
+
+/*-------------------------------------------------------------------------------------------------------------------------------------------------
+    Media query (start here)
+--------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media only screen and (max-width: 599px) {
+    .patient--landing--wrapper .section--one {
+        height: auto;
+        justify-content: flex-start;
+        text-align: center;
+        background-image: none !important;
+        margin-bottom: 100px;
+    }
+    .patient--landing--wrapper .section--one .heading{
+        margin-top: 40px;
+    }
+    .patient--landing--wrapper .section--one .connect--now--btn {
+        margin: 0 0 10px 0;
+    }
+    .patient--landing--wrapper .heading--two, 
+    .patient--landing--wrapper .heading{
+        font-size: 22px;
+        margin: 0 0 20px 0;
+    }
+    .patient--landing--wrapper .section--one p {
+        font-size: 15px;
+        line-height: 23px;
+    }
+    .patient--landing--wrapper .sub--heading {
+        font-size: 15px;
+        line-height: 23px;
+    }   
+  
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card-content h5 {
+        font-size: 20px;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card-content h5 {
+        font-size: 17px;
+        margin: 30px 0 13px 0;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card {
+        padding: 30px 30px 25px 25px;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card-content p {
+        font-size: 15px;
+    }
+    .patient--landing--wrapper .section--six,
+    .patient--landing--wrapper .section--three{
+        text-align: center;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps {
+        margin-bottom: 35px;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps:last-child {
+        margin-bottom: 0;
+    }
+    .patient--landing--wrapper .section--three .about--content {
+        margin-left: 0;
+    }
+    .patient--landing--wrapper .main--footer{
+        padding: 25px 0 25px 0;
+        text-align: center;
+    }
+    .patient--landing--wrapper .main--footer .xs--brdr{
+        border: none;
+        padding: 0;
+        margin-top: 0;
+    }
+  
+    .patient--landing--wrapper .main--footer h6 {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 15px 0 10px 0;
+        border-top: 1px solid #26a4ec;
+        padding-top: 15px;
+    }
+    .patient--landing--wrapper .main--footer .social {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px !important;
+    }
+    .patient--landing--wrapper .main--footer .social li a {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+    .patient--landing--wrapper .main--footer .links li a {
+        font-size: 15px;
+    }
+    .patient--landing--wrapper .main--footer .links li {
+        margin-bottom: 4px;
+    }
+    .patient--landing--wrapper .section--two ,
+    .patient--landing--wrapper .section--three,
+    .patient--landing--wrapper .section--four,
+    .patient--landing--wrapper .section--five,
+    .patient--landing--wrapper .section--six{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .patient--landing--wrapper .grey--bg {
+        padding-bottom: 40px;
+    }
+    .patient--landing--wrapper .mb--100 {
+        margin-bottom: 40px;
+    }
+    .patient--landing--wrapper .pt--100 {
+        padding-top: 40px;
+    }
+    .patient--landing--wrapper .mat-primary {
+        font-size: 14px !important;
+        height: 40px;
+        padding: 0 15px;
+    }
+    .patient--landing--wrapper .section--two .history .lines {
+        height: auto;
+        width: 75%;
+        margin: 15px 0;
+    }
+    .patient--landing--wrapper .section--two .history .box h4 {
+        margin: 0 0 2px 0;
+        font-size: 22px;
+    }
+    .patient--landing--wrapper .section--two .history .box p {
+        font-size: 13px;
+    }
+    .patient--landing--wrapper .section--two .history{
+        padding: 15px 0;
+    }
+    .patient--landing--wrapper .section--five .specialist--wrapper .specialist--card .mat-card-content h4 {
+        font-size: 17px;
+    }
+    .patient--landing--wrapper .section--five .specialist--wrapper .specialist--card .mat-card-actions p {
+        font-size: 14px;
+    }
+    .patient--landing--wrapper .copyright--footer p {
+        font-size: 12px;
+        margin-left: 5px;        
+    }
+
+}
+@media only screen and (min-width: 600px) and (max-width: 979px){
+    .patient--landing--wrapper .section--one {
+        height: 50vh;
+        justify-content: flex-start;
+        text-align: center;
+        background-image: none !important;
+    }
+    .patient--landing--wrapper .section--one .heading{
+        margin-top: 50px;
+    }
+    .patient--landing--wrapper .section--six,
+    .patient--landing--wrapper .section--three{
+        text-align: center;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps {
+        margin-bottom: 35px;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps:last-child {
+        margin-bottom: 0;
+    }
+    .patient--landing--wrapper .section--three .about--content {
+        margin-left: 0;
+    }
+    .patient--landing--wrapper .main--footer{
+        padding: 50px 0 35px 45px;
+    }
+    .patient--landing--wrapper .section--two ,
+    .patient--landing--wrapper .section--three,
+    .patient--landing--wrapper .section--four,
+    .patient--landing--wrapper .section--five,
+    .patient--landing--wrapper .section--six{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .patient--landing--wrapper .grey--bg {
+        padding-bottom: 50px;
+    }
+    .patient--landing--wrapper .mb--100 {
+        margin-bottom: 50px;
+    }
+    .patient--landing--wrapper .pt--100 {
+        padding-top: 50px;
+    }
+    
+    
+}
+@media only screen and (min-width: 980px) and (max-width: 1279px){
+    .patient--landing--wrapper .section--one {
+        height: 77vh;
+        justify-content: flex-start;
+    }
+    .patient--landing--wrapper .section--one .heading{
+        margin-top: 50px;
+    }
+    .patient--landing--wrapper .main--footer{
+        padding: 50px 0 35px 70px;
+    }
+    .patient--landing--wrapper .heading--two, 
+    .patient--landing--wrapper .heading{
+        font-size: 44px;
+    }
+    .patient--landing--wrapper .section--one p {
+        font-size: 17px;
+    }
+    .patient--landing--wrapper .sub--heading {
+        font-size: 16px;
+    }
+    .patient--landing--wrapper .heading--two, 
+    .patient--landing--wrapper .heading {
+        margin: 0 0 20px 0;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card-content h5 {
+        font-size: 20px;
+    }
+    .patient--landing--wrapper .section--four .works--box .work--steps .mat-card-content p {
+        font-size: 15px;
+    }
+    .patient--landing--wrapper .section--two ,
+    .patient--landing--wrapper .section--three,
+    .patient--landing--wrapper .section--four,
+    .patient--landing--wrapper .section--five,
+    .patient--landing--wrapper .section--six{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media only screen and (min-width: 1280px) and (max-width: 1440px){
+    .patient--landing--wrapper .section--one {
+        height: 85vh;
+        justify-content: flex-start;
+    }
+    .patient--landing--wrapper .section--one .heading{
+        margin-top: 50px;
+    }
+}
+@media only screen and (min-width: 1441px) and (max-width: 1550px){}
