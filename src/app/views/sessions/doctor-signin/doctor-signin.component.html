@@ -1,0 +1,39 @@
+<div fxLayout="row wrap" class="sign-in-wrapper">
+  <div class="seciton-left"></div>
+  <div class="form-holder">
+
+    <header class="auth--header">
+      <figure class="cursor--pointer">
+        <img src="assets/images/arkenea/logo.png" [routerLink]="['/landing']" alt="" class="app-logo logo--lg">
+         <img src="assets/images/arkenea/logoxs.png" [routerLink]="['/landing']" alt="small logo" class="logo--xs">
+      </figure>
+      <p>Not registered yet? <a>Sign Up</a></p>
+    </header>
+
+    <div class="social--header">
+      <h3>Login</h3>    
+    </div>
+
+
+    <form>
+      <div fxLayout="row wrap" class="text-center-xs">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+          <mat-form-field appearance="outline" class="full--width">
+            <mat-label>Enter Email</mat-label>
+            <input matInput placeholder="Enter Email">
+          </mat-form-field>
+
+          <mat-form-field appearance="outline" class="full--width no--pad--bot">
+            <mat-label>Enter Password</mat-label>
+            <input matInput placeholder="Enter Password">
+          </mat-form-field>
+
+          <a class="forgot--pass" [routerLink]="['/sessions/forgot-password']" >Forgot Password?</a>
+          <button mat-raised-button color="primary" class="proceed--btn" [routerLink]="['/sessions/doctor-verify']">Proceed</button>
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>
+

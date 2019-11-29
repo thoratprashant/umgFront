@@ -6,8 +6,12 @@ import { SigninComponent } from './signin/signin.component';
 import { SignupComponent } from './signup/signup.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
+import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
+import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
 
 export const SessionsRoutes: Routes = [
+
+  // Patient route 
   {
     path: '',
     children: [{
@@ -18,7 +22,26 @@ export const SessionsRoutes: Routes = [
       path: 'signin',
       component: SigninComponent,
       data: { title: 'Signin' }
-    }, {
+    },
+    
+    // doctor route
+    {
+      path: 'doctor-signin',
+      component: DoctorSigninComponent,
+      data: { title: 'Signin' }
+    }, 
+    {
+      path: 'doctor-verify',
+      component: VerifyDoctorComponent,
+      data: { title: 'Signin' }
+    }, 
+    
+    
+    
+    
+    
+    // Comman route
+    {
       path: 'forgot-password',
       component: ForgotPasswordComponent,
       data: { title: 'Forgot password' }

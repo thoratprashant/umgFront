@@ -1,0 +1,38 @@
+<div fxLayout="row wrap" class="sign-in-wrapper">
+  <div class="seciton-left"></div>
+  <div class="form-holder">
+
+    <header class="auth--header">
+      <figure class="cursor--pointer">
+        <img src="assets/images/arkenea/logo.png" [routerLink]="['/landing']" alt="" class="app-logo logo--lg">
+        <img src="assets/images/arkenea/logoxs.png" [routerLink]="['/landing']" alt="small logo" class="logo--xs">
+      </figure>  
+      <p>Not registered yet? <a [routerLink]="['/sessions/signup']">Sign Up</a></p>    
+    </header>
+
+    <div class="social--header">
+      <h3>Please verify it's you!</h3>    
+    </div>
+
+    <form>
+      <div fxLayout="row wrap" class="text-center-xs">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+            <p class="info--pass">We have sent a verification code on your registered email. Kindly enter the code in the 
+              below field to proceed.</p>
+
+          <mat-form-field appearance="outline" class="full--width no--pad--bot">
+            <mat-label>Verification code</mat-label>
+            <input matInput placeholder="Enter Email">
+          </mat-form-field>
+          
+          <footer class="auth--header">
+            <button mat-stroked-button color="primary" [routerLink]="['/sessions/doctor-signin']">Back to Login</button>
+            <button mat-raised-button color="primary">Verify & Proceed</button>              
+          </footer>
+         
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

@@ -4,10 +4,12 @@
     padding: 0 30px  ;
     height: 36px; 
     border-radius: 22px;
+    font-weight: 400;
 }
 
 body .mat-stroked-button {
     border-color: #2eb2ff !important;
+    @include primary-btn-style;
 }
 body .mat-raised-button{
     @include primary-btn-style;
