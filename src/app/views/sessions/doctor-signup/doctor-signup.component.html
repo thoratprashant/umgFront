@@ -1,0 +1,251 @@
+<div fxLayout="row wrap" class="sign-in-wrapper">
+  <div class="seciton-left"></div>
+  <div class="form-holder">
+
+    <header class="auth--header">
+      <figure class="cursor--pointer">
+        <img src="assets/images/arkenea/logo.png" [routerLink]="['/landing']" alt="" class="app-logo logo--lg">
+        <img src="assets/images/arkenea/logoxs.png" [routerLink]="['/landing']" alt="small logo" class="logo--xs">
+      </figure>
+      <p>Already have an account? <a [routerLink]="'/sessions/doctor-signin'"> Login </a></p>
+    </header>
+
+    <div class="stepper--header">
+      <h3 class="m-0">Personal Details</h3>
+      <div class="step--count">
+        <h5 class="m-0">Step 1/<span>4</span></h5>
+      </div>
+    </div>
+
+
+    <form>
+      <div fxLayout="row wrap" class="dsignup--wrapper">
+        <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+          <mat-horizontal-stepper [linear]="isLinear" #stepper>
+
+            <!-- Step 1 -->
+            <mat-step [stepControl]="step1">
+              <form [formGroup]="step1">
+                <div class="content--wrapper">
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>Dr</mat-label>
+                    <mat-select>
+                      <mat-option> Dr 1</mat-option>
+                      <mat-option> Dr 2</mat-option>
+                      <mat-option> Dr 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.sm="0" fxLayoutGap.xs="0">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="49" fxFlex.lg="49" fxFlex.xl="49">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>First Name</mat-label>
+                        <input matInput placeholder="First Name">
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="49" fxFlex.lg="49" fxFlex.xl="49">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>Last Name</mat-label>
+                        <input matInput placeholder="Last Name">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                  <mat-form-field appearance="outline" class="full--width">
+                    <mat-label>Enter Email</mat-label>
+                    <input matInput placeholder="Enter Email">
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="full--width">
+                    <input matInput [matDatepicker]="picker" (focus)="picker.open()" placeholder="Date of Birth">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+                  <mat-radio-group class="inline--radio" aria-label="Select an option">
+                    <div class="radio--label">Gender</div>
+                    <mat-radio-button class="mr-1" value="1">Male </mat-radio-button>
+                    <mat-radio-button value="2">Female </mat-radio-button>
+                  </mat-radio-group>
+                  <div fxLayout="row wrap" fxLayoutGap="2%">
+                    <div fxFlex.xs="25" fxFlex.sm="15" fxFlex.md="15" fxFlex.lg="15" fxFlex.xl="10">
+                      <mat-form-field class="full--width" appearance="outline">
+                        <mat-label>+1</mat-label>
+                        <mat-select>
+                          <mat-option> 01</mat-option>
+                          <mat-option> 02</mat-option>
+                          <mat-option> 03</mat-option>
+                        </mat-select>
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex.xs="73" fxFlex.sm="83" fxFlex.md="83" fxFlex.lg="83" fxFlex.xl="88">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>Primary phone number</mat-label>
+                        <input matInput placeholder="Primary phone number">
+                      </mat-form-field>
+                    </div>
+                  </div>
+                </div>
+                <footer class="stepper--footer">
+                  <button mat-stroked-button matStepperPrevious color="primary"
+                    [routerLink]="'/sessions/doctor-signin'">Back</button>
+                  <button mat-raised-button matStepperNext color="primary">Next</button>
+                </footer>
+              </form>
+            </mat-step>
+
+            <!-- Step 2 -->
+            <mat-step [stepControl]="step2">
+              <form [formGroup]="step2">
+                <div class="content--wrapper">
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>Training Specialty</mat-label>
+                    <mat-select>
+                      <mat-option> Training Specialty 1</mat-option>
+                      <mat-option> Training Specialty 2</mat-option>
+                      <mat-option> Training Specialty 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field appearance="outline" class="full--width">
+                    <mat-label>Hospital Name</mat-label>
+                    <input matInput placeholder="Hospital Name">
+                  </mat-form-field>
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>State</mat-label>
+                    <mat-select>
+                      <mat-option> State 1</mat-option>
+                      <mat-option> State 2</mat-option>
+                      <mat-option> State 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>Country</mat-label>
+                    <mat-select>
+                      <mat-option> Country 1</mat-option>
+                      <mat-option> Country 2</mat-option>
+                      <mat-option> Country 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>City</mat-label>
+                    <mat-select>
+                      <mat-option> City 1</mat-option>
+                      <mat-option> City 2</mat-option>
+                      <mat-option> City 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-form-field class="full--width" appearance="outline">
+                    <mat-label>Year of graduation</mat-label>
+                    <mat-select>
+                      <mat-option> Year of graduation 1</mat-option>
+                      <mat-option> Year of graduation 2</mat-option>
+                      <mat-option> Year of graduation 3</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                  <mat-radio-group class="inline--radio" aria-label="Select an option">
+                    <div class="radio--label">Training Type</div>
+                    <mat-radio-button class="mr-1" value="1">Residency training </mat-radio-button>
+                    <mat-radio-button value="2">Fellowship training </mat-radio-button>
+                  </mat-radio-group>
+
+                  <div class="add--more">
+                    <mat-icon>add_circle</mat-icon>
+                    Add more
+                  </div>
+
+                </div>
+                <footer class="stepper--footer">
+                  <button mat-stroked-button matStepperPrevious color="primary">Back</button>
+                  <button mat-raised-button matStepperNext color="primary">Next</button>
+                </footer>
+              </form>
+            </mat-step>
+
+            <!-- Step 3 -->
+            <mat-step [stepControl]="step3">
+              <form [formGroup]="step3">
+                <div class="content--wrapper">
+                  <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.sm="0" fxLayoutGap.xs="0">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="48" fxFlex.xl="48"
+                      class="search--box">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>Your Speciality</mat-label>
+                        <input matInput placeholder="Your Speciality">
+                      </mat-form-field>
+                      <mat-icon>search</mat-icon>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="48" fxFlex.xl="48"
+                      class="search--box">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>Your Sub-Speciality</mat-label>
+                        <input matInput placeholder="Your Sub-Speciality">
+                      </mat-form-field>
+                      <mat-icon>search</mat-icon>
+                    </div>
+                    <div class="add--more mb--25">
+                      <mat-icon>add_circle</mat-icon>
+                      Add more
+                    </div>
+                  </div>
+
+                  <div fxLayout="row wrap" fxLayoutGap="2%" fxLayoutGap.sm="0" fxLayoutGap.xs="0">
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="48" fxFlex.xl="48">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <mat-label>Permitted State</mat-label>
+                        <input matInput placeholder="Permitted State">
+                      </mat-form-field>
+                    </div>
+                    <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="48" fxFlex.lg="48" fxFlex.xl="48">
+                      <mat-form-field appearance="outline" class="full--width">
+                        <input matInput [matDatepicker]="picker1" (focus)="picker1.open()" placeholder="Date of Birth">
+                        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                        <mat-datepicker #picker1></mat-datepicker>
+                      </mat-form-field>
+                    </div>
+                    <div class="add--more mb--25">
+                      <mat-icon>add_circle</mat-icon>
+                      Add more
+                    </div>
+                  </div>
+
+                </div>
+                <footer class="stepper--footer">
+                  <button mat-stroked-button matStepperPrevious color="primary">Back</button>
+                  <button mat-raised-button matStepperNext color="primary">Next</button>
+                </footer>
+              </form>
+            </mat-step>
+
+            <!-- Step 4 -->
+            <mat-step>
+              <div class="content--wrapper">
+
+                  <div fxLayout="row wrap">
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100"
+                  class="upload--buss--docs--sec">
+                  <label>Upload your Proof of documents, License Certificates.</label>
+                  <div class="upload--box">
+                    <input type="file" />
+                    <mat-icon class="cloud-icon">cloud_upload</mat-icon>
+                    <div class="select--file">Select file from your computer</div>
+                  </div>
+                  <div class="file--details mb-1">Supported formats JPEG, JPG, PNG</div>
+                </div>
+                <div fxFlex.xs="100" fxFlex.sm="100" fxFlex.md="100" fxFlex.lg="100" fxFlex.xl="100">
+                  <p class="t--and--p mb-0">By clicking proceed, you're agreeing to our <a>Terms of Use</a> and <a>Privacy Policy</a></p>
+                </div>
+                </div>
+
+              </div>
+              <footer class="stepper--footer">
+                <button mat-stroked-button matStepperPrevious color="primary">Back</button>
+                <button mat-raised-button matStepperNext color="primary">Next</button>
+              </footer>
+            </mat-step>
+          </mat-horizontal-stepper>
+
+
+
+
+        </div>
+      </div>
+    </form>
+
+  </div>
+</div>

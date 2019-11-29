@@ -9,10 +9,10 @@
 
       <ul class="menu" *ngIf="!layoutConf.isMobile">
         <li>
-          <a matRipple>Customer Support</a>
+          <a >Customer Support</a>
         </li>
         <li>
-          <a matRipple>I am a Doctor </a>
+          <a [routerLink]="'/sessions/doctor-signin'">I am a Doctor </a>
         </li>
         <li>
           <a [routerLink]="'/sessions/signin'">

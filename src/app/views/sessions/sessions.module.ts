@@ -13,6 +13,7 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatSelectModule,
+  MatStepperModule,
  } from '@angular/material';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -26,6 +27,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
 import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
+import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
 
 @NgModule({
   imports: [
@@ -43,9 +45,10 @@ import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
     MatDatepickerModule,
     MatNativeDateModule,
     MatSelectModule,
+    MatStepperModule,
     RouterModule.forChild(SessionsRoutes)
   ],
   declarations: [ForgotPasswordComponent, LockscreenComponent, SigninComponent, SignupComponent, NotFoundComponent, ErrorComponent, 
-    DoctorSigninComponent, VerifyDoctorComponent]
+    DoctorSigninComponent, VerifyDoctorComponent, DoctorSignupComponent]
 })
 export class SessionsModule { }

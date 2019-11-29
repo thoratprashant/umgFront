@@ -8,6 +8,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ErrorComponent } from './error/error.component';
 import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
 import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
+import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
+
 
 export const SessionsRoutes: Routes = [
 
@@ -28,6 +30,11 @@ export const SessionsRoutes: Routes = [
     {
       path: 'doctor-signin',
       component: DoctorSigninComponent,
+      data: { title: 'Signin' }
+    },
+    {
+      path: 'doctor-signup',
+      component: DoctorSignupComponent,
       data: { title: 'Signin' }
     }, 
     {

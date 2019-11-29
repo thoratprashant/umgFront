@@ -1,0 +1,58 @@
+@import'../signin/signin.component.scss';
+
+
+.stepper--header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 20px 0;
+    h3{
+        color: #333;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .step--count{
+        h5{
+            font-size: 18px;
+            font-weight: 500;
+            color: #999999;
+        span{
+            font-size: 14px;
+            font-weight: normal;
+            }
+        }
+    }
+}
+
+
+.dsignup--wrapper{
+    ::ng-deep{
+        .mat-horizontal-content-container{
+            padding: 0;
+            .content--wrapper{
+                height: calc(100vh - 282px);
+                overflow: auto;
+                padding-top: 5px;
+                .t--and--p{
+                    font-size: 14px;
+                    color: #333;
+                    margin-top: 5px;
+                    a{
+                        color: #2eb2ff;
+                    }
+                }
+            }
+            .stepper--footer{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30px;
+            }
+        }
+        
+    }
+  
+}
+::ng-deep .mat-horizontal-stepper-header-container {
+    display: none !important;
+  }
