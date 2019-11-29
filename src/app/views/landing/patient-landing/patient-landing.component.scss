@@ -98,7 +98,7 @@
                 }
             }
             .lines{
-                border: 1px solid #993737;
+                border-right: 1px solid #993737;
                 height: 55px;
             }
         }
@@ -295,6 +295,20 @@
     Media query (start here)
 --------------------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media only screen 
+    and (device-width : 568px) 
+    and (device-height : 320px)  { 
+        .patient--landing--wrapper .section--two .history {
+            padding: 15px 85px !important;
+        }
+        .patient--landing--wrapper .section--one .connect--now--btn {
+            margin: 0px 10px 0 0 !important;
+        }
+        
+        
+    }
+
+
 @media only screen and (max-width: 599px) {
     .patient--landing--wrapper .section--one {
         height: auto;
@@ -408,6 +422,7 @@
         height: auto;
         width: 75%;
         margin: 15px 0;
+        border-bottom: 1px solid #993737;
     }
     .patient--landing--wrapper .section--two .history .box h4 {
         margin: 0 0 2px 0;
@@ -433,10 +448,11 @@
 }
 @media only screen and (min-width: 600px) and (max-width: 979px){
     .patient--landing--wrapper .section--one {
-        height: 50vh;
+        height: auto;
         justify-content: flex-start;
         text-align: center;
         background-image: none !important;
+        margin-bottom: 100px;
     }
     .patient--landing--wrapper .section--one .heading{
         margin-top: 50px;
@@ -462,8 +478,8 @@
     .patient--landing--wrapper .section--four,
     .patient--landing--wrapper .section--five,
     .patient--landing--wrapper .section--six{
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
     .patient--landing--wrapper .grey--bg {
         padding-bottom: 50px;

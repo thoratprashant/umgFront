@@ -3,3 +3,8 @@
 .main-content-wrap{
     width: calc(100%) !important;
 }
+@media only screen and (max-width: 959px) {
+    .app-admin-container .rightside-content-hold {
+        height: calc(100vh - 62px);
+    }
+}
