@@ -1,0 +1,19 @@
+@import'../signin/signin.component.scss';
+
+.thankyou--wrapper{
+    margin-top: 60px;
+    h2{
+        margin: 40px 0 25px 0;
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+    }
+    p{
+        font-size: 16px;
+        line-height: 1.63;
+        color: #333;
+        span{
+            color: #2eb2ff;
+        }
+    }
+}

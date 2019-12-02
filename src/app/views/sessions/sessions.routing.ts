@@ -9,7 +9,7 @@ import { ErrorComponent } from './error/error.component';
 import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
 import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
 import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
-
+import { ThankyouDoctorComponent } from './thankyou-doctor/thankyou-doctor.component';
 
 export const SessionsRoutes: Routes = [
 
@@ -35,13 +35,18 @@ export const SessionsRoutes: Routes = [
     {
       path: 'doctor-signup',
       component: DoctorSignupComponent,
-      data: { title: 'Signin' }
+      data: { title: 'Signup' }
     }, 
     {
       path: 'doctor-verify',
       component: VerifyDoctorComponent,
-      data: { title: 'Signin' }
+      data: { title: 'Verify' }
     }, 
+    {
+      path: 'thankyou',
+      component: ThankyouDoctorComponent,
+      data: { title: 'Thank you' }
+    },
     
     
     
