@@ -29,6 +29,7 @@ import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
 import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
 import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
 import { ThankyouDoctorComponent } from './thankyou-doctor/thankyou-doctor.component';
+import { SetPasswordDoctorComponent } from './set-password-doctor/set-password-doctor.component';
 
 @NgModule({
   imports: [
@@ -50,6 +51,6 @@ import { ThankyouDoctorComponent } from './thankyou-doctor/thankyou-doctor.compo
     RouterModule.forChild(SessionsRoutes)
   ],
   declarations: [ForgotPasswordComponent, LockscreenComponent, SigninComponent, SignupComponent, NotFoundComponent, ErrorComponent, 
-    DoctorSigninComponent, VerifyDoctorComponent, DoctorSignupComponent, ThankyouDoctorComponent]
+    DoctorSigninComponent, VerifyDoctorComponent, DoctorSignupComponent, ThankyouDoctorComponent, SetPasswordDoctorComponent]
 })
 export class SessionsModule { }

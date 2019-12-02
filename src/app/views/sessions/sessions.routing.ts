@@ -10,6 +10,7 @@ import { DoctorSigninComponent } from './doctor-signin/doctor-signin.component';
 import { VerifyDoctorComponent } from './verify-doctor/verify-doctor.component';
 import { DoctorSignupComponent } from './doctor-signup/doctor-signup.component';
 import { ThankyouDoctorComponent } from './thankyou-doctor/thankyou-doctor.component';
+import { SetPasswordDoctorComponent } from './set-password-doctor/set-password-doctor.component';
 
 export const SessionsRoutes: Routes = [
 
@@ -46,6 +47,11 @@ export const SessionsRoutes: Routes = [
       path: 'thankyou',
       component: ThankyouDoctorComponent,
       data: { title: 'Thank you' }
+    },
+    {
+      path: 'set-password',
+      component: SetPasswordDoctorComponent,
+      data: { title: 'Set Password' }
     },
     
     

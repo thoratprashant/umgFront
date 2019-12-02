@@ -12,8 +12,15 @@
         font-size: 16px;
         line-height: 1.63;
         color: #333;
-        span{
+        a{
             color: #2eb2ff;
+            word-break: break-all;
         }
+    }
+}
+@media only screen and (max-width: 599px) {
+    .thankyou--wrapper {
+        margin-top: 20px;
+        text-align: center;
     }
 }
